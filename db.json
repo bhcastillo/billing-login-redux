@@ -3,39 +3,63 @@
     {
     "id":1,
     "firstName":"Brayan",
-    "lastName": "Castillo"
+    "lastName": "Castillo",
+    "invoices":[
+      {
+        "id":1,
+        "daysBehind":10,
+        "value":100000
+      },
+      {
+        "id":2,
+        "daysBehind":5,
+        "value":430000
+      },
+      {
+        "id":3,
+        "daysBehind":12,
+        "value":230000
+      },
+      {
+        "id":4,
+        "daysBehind":3,
+        "value":120000
+      }
+    ]
     },
     {
     "id":2,
     "firstName":"Camilo",
-    "lastName": "Benitez"
+    "lastName": "Benitez",
+    "invoices":[
+      {
+        "id":1,
+        "daysBehind":10,
+        "value":100000
+      },
+      {
+        "id":2,
+        "daysBehind":5,
+        "value":430000
+      }
+    ]
     },
     {
     "id":3,
     "firstName":"Juan",
-    "lastName": "Perez"
-    }
-  ],
-  "billing":[
-    {
-      "id":1,
-      "daysBehind":10,
-      "value":100000
-    },
-    {
-      "id":2,
-      "daysBehind":5,
-      "value":430000
-    },
-    {
-      "id":3,
-      "daysBehind":12,
-      "value":230000
-    },
-    {
-      "id":4,
-      "daysBehind":3,
-      "value":120000
+    "lastName": "Perez",
+    "invoices":[
+      {
+        "id":3,
+        "daysBehind":12,
+        "value":230000
+      },
+      {
+        "id":4,
+        "daysBehind":3,
+        "value":120000
+      } 
+    ]
     }
   ]
 }

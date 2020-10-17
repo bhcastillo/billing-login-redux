@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 //Redux
 import { Store } from '@ngrx/store';
-import { getInvoices } from 'src/app/store/actions';
+import { getUser } from 'src/app/store/actions';
 import { AppState } from 'src/app/store/app.reducers';
 //Services
 import { AlertMessageService } from 'src/app/services/alert-message.service';
-import { IInvoice } from '../../interfaces/IInvoice';
 import { NgxSpinnerService } from 'ngx-spinner';
+//Interfaces
+import { IInvoice, IUser } from '../../interfaces/IUser';
 
 @Component({
   selector: 'app-home',
@@ -16,16 +17,23 @@ import { NgxSpinnerService } from 'ngx-spinner';
 })
 export class HomeComponent implements OnInit {
   invoices:IInvoice[] = [];
-
+  user:IUser = {
+    id:null,
+    firstName:undefined,
+    lastName:undefined,
+    invoices:[]
+  };
   constructor(public message:AlertMessageService, private store:Store<AppState>,private spinner:NgxSpinnerService){}
 
   ngOnInit(): void {
-    this.store.select('invoices').subscribe(( { invoices, loading, error} )=>{
-      this.invoices = invoices;
-      loading ? this.spinner.show() : this.spinner.hide();
-    });
-    this.store.dispatch(getInvoices());
     
+    this.store.select('user').subscribe(({ user, loading, error })=>{
+      this.user = user;
+      this.invoices = user.invoices;
+      loading ? this.spinner.show() : this.spinner.hide();
+
+    })
+    this.store.dispatch(getUser({id:1}));
 
   }
 

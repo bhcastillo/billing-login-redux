@@ -1,3 +1,3 @@
-import { InvoicesEffects } from './invoices.effect';
+import { UserEffects } from './user.effect';
 
-export const effectArray:any[] = [ InvoicesEffects ];
+export const effectArray:any[] = [ UserEffects ];

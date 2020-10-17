@@ -2,25 +2,18 @@
   <p style="font-size: 2em; color: white">Cargando...</p>
 </ngx-spinner>
 <div class="container">
-  <div *ngIf="invoices.length > 0">
+  <div *ngIf="user.id" class="text-center">
+    <h2>
+      Estimado(a)
+      <br />
+      {{ user.firstName | titlecase }}
+      {{ user.lastName | titlecase }}
+    </h2>
     <app-table></app-table>
     <div class="text-center mt-3">
       <h2>¿Puede realizar este pago?</h2>
-      <button
-        mat-raised-button
-        color="primary"
-        class="mr-2"
-        (click)="this.message.messageDetailInvoices()"
-      >
-        SI
-      </button>
-      <button
-        mat-raised-button
-        color="warn"
-        (click)="this.message.messageNoPay()"
-      >
-        NO
-      </button>
+      <button mat-raised-button color="primary" class="mr-2">SI</button>
+      <button mat-raised-button color="warn">NO</button>
     </div>
   </div>
 </div>

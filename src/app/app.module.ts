@@ -13,8 +13,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { appReducer } from './store/app.reducers';
 import { effectArray } from './store/effects';
 //Services
-import { InvoicesService } from './services/invoices.service';
 import { UserService } from './services/user.service';
+import { AlertMessageService } from './services/alert-message.service';
 
 import { environment } from 'src/environments/environment';
 //Components
@@ -38,7 +38,7 @@ import { AppComponent } from './app.component';
     NgxSpinnerModule,
   ],
 
-  providers: [ InvoicesService, UserService],
+  providers: [ AlertMessageService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

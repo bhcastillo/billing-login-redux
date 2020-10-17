@@ -1,3 +1,3 @@
 import { from } from 'rxjs';
 
-export * from './invoices.actions';
+export * from './user.action';

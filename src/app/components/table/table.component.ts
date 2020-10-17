@@ -2,8 +2,8 @@ import { Component, OnInit, DoCheck, OnChanges, SimpleChanges } from '@angular/c
 import { Store } from '@ngrx/store';
 
 import { AppState } from '../../store/app.reducers';
-import { IInvoice } from '../../interfaces/IInvoice';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { IInvoice } from '../../interfaces/IUser';
 
 @Component({
   selector: 'app-table',
@@ -21,12 +21,12 @@ export class TableComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.store.select('invoices').subscribe(( { invoices, loading, error} )=>{
-      this.invoices = invoices;
+    this.store.select('user').subscribe(( { user, loading, error} )=>{
+      this.invoices = user.invoices;
     });
 
   }
-  private getTotalValues(){
+  getTotalValues(){
     return this.invoices.map(invoice=> invoice.value).reduce((acc,value)=>acc + value , 0);
   }
 }
