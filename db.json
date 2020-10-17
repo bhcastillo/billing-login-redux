@@ -1,0 +1,41 @@
+{
+  "users":[
+    {
+    "id":1,
+    "firstName":"Brayan",
+    "lastName": "Castillo"
+    },
+    {
+    "id":2,
+    "firstName":"Camilo",
+    "lastName": "Benitez"
+    },
+    {
+    "id":3,
+    "firstName":"Juan",
+    "lastName": "Perez"
+    }
+  ],
+  "billing":[
+    {
+      "id":1,
+      "dayBehind":10,
+      "value":100000
+    },
+    {
+      "id":2,
+      "dayBehind":5,
+      "value":430000
+    },
+    {
+      "id":3,
+      "dayBehind":12,
+      "value":230000
+    },
+    {
+      "id":4,
+      "dayBehind":3,
+      "value":120000
+    }
+  ]
+}
