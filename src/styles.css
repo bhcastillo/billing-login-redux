@@ -25,6 +25,13 @@ table {
 }
 .container {
   min-height: calc(100vh - 110px);
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+/* header */
+header {
+  height: 4rem;
+  max-height: 4rem;
 }
 /* footer */
 footer {
@@ -34,4 +41,10 @@ footer {
 }
 .about-us {
   max-width: 260px;
+}
+/* bootswatch */
+.nav-link:hover {
+  font-size: 1rem !important;
+  padding-bottom: 1px !important;
+  border-bottom: 2px solid #fff;
 }
