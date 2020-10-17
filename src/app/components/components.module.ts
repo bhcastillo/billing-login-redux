@@ -9,7 +9,8 @@ import { MaterialModule } from '../material.module';
   declarations: [TableComponent],
   imports: [
     CommonModule,
-    MaterialModule
+    MaterialModule,
+    
   ],
   exports:[
     TableComponent

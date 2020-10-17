@@ -13,4 +13,7 @@ export class UserService {
   getBilling(){
     return this.http.get(`${this.URI}/billing`).pipe(delay(2000));
   }
+  getUserId(id:number | string){
+    return this.http.get(`${this.URI}/users/${id}`).pipe(delay(1500));
+  }
 }

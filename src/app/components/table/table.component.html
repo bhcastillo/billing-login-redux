@@ -1,12 +1,7 @@
 <div class="row">
   <div class="col text-center">
-    <h1>Data</h1>
-    <table
-      mat-table
-      [dataSource]="invoices"
-      *ngIf="invoices.length > 0"
-      class="mat-elevation-z8"
-    >
+    <h1>Facturación</h1>
+    <table mat-table [dataSource]="invoices" class="mat-elevation-z8">
       <!-- Position id -->
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef class="text-center">

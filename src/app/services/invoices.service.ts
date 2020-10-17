@@ -14,6 +14,6 @@ export class InvoicesService {
   constructor(private http:HttpClient) { }
   
   getBilling():Observable<IInvoice[]>{
-    return this.http.get<IInvoice[]>(`${this.URI}/billing`).pipe(delay(500));
+    return this.http.get<IInvoice[]>(`${this.URI}/billing`).pipe(delay(3000));
   }
 }

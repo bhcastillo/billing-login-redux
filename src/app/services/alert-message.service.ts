@@ -23,6 +23,7 @@ export class AlertMessageService  {
       html: `Usted tiene <b>${this.invoices.length}</b> 
             facturas en mora, la suma total equivale a <b>COP${this.getTotalValues()}</b>`,
     });
+    
   }
   messageNoPay(){
      Swal.fire({

@@ -19,7 +19,8 @@ const _invoicesReducer = createReducer(invoicesInitialState,
   on(actions.getInvoices, state =>({...state, loading:true})),
   on(actions.getInvoicesSuccess,(state, { invoices })=> ({
     ...state,
-    loading:true,
+    loading:false,
+    loaded:true,
     invoices:[...invoices]
     })),
   on(actions.getInvoicesError, (state, { payload })=> ({

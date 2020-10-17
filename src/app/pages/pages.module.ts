@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { ComponentsModule } from '../components/components.module';
 import { MaterialModule } from '../material.module';
 import { SharedModule } from '../shared/shared.module';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -13,7 +14,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     ComponentsModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    NgxSpinnerModule
   ],
   exports:[
     HomeComponent

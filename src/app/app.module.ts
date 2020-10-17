@@ -3,21 +3,22 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material.module';
+import { NgxSpinnerModule, NgxSpinnerService } from 'ngx-spinner';
+import { PagesModule } from './pages/pages.module';
 
+//Redux
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-
-import { environment } from 'src/environments/environment';
-
 import { appReducer } from './store/app.reducers';
 import { effectArray } from './store/effects';
 //Services
 import { InvoicesService } from './services/invoices.service';
 import { UserService } from './services/user.service';
 
+import { environment } from 'src/environments/environment';
+//Components
 import { AppComponent } from './app.component';
-import { PagesModule } from './pages/pages.module';
 @NgModule({
   declarations: [
     AppComponent
@@ -34,7 +35,9 @@ import { PagesModule } from './pages/pages.module';
     MaterialModule,
     PagesModule,
     AppRoutingModule,
+    NgxSpinnerModule,
   ],
+
   providers: [ InvoicesService, UserService],
   bootstrap: [AppComponent]
 })
