@@ -1,12 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TableComponent } from './table/table.component';
+import { MaterialModule } from '../material.module';
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [TableComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    MaterialModule
+  ],
+  exports:[
+    TableComponent
   ]
 })
 export class ComponentsModule { }

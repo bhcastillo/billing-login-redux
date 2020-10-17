@@ -19,22 +19,22 @@
   "billing":[
     {
       "id":1,
-      "dayBehind":10,
+      "daysBehind":10,
       "value":100000
     },
     {
       "id":2,
-      "dayBehind":5,
+      "daysBehind":5,
       "value":430000
     },
     {
       "id":3,
-      "dayBehind":12,
+      "daysBehind":12,
       "value":230000
     },
     {
       "id":4,
-      "dayBehind":3,
+      "daysBehind":3,
       "value":120000
     }
   ]

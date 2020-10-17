@@ -1,2 +1,21 @@
-<h1>Data</h1>
-<pre> {{ invoices | json }} </pre>
+<div class="container">
+  <app-table></app-table>
+  <div class="text-center mt-3">
+    <h2>¿Puede realizar este pago?</h2>
+    <button
+      mat-raised-button
+      color="primary"
+      class="mr-2"
+      (click)="this.message.messageDetailInvoices()"
+    >
+      SI
+    </button>
+    <button
+      mat-raised-button
+      color="warn"
+      (click)="this.message.messageNoPay()"
+    >
+      NO
+    </button>
+  </div>
+</div>

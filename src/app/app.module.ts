@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from './material.module';
 
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -31,8 +31,9 @@ import { PagesModule } from './pages/pages.module';
       logOnly:environment.production
     }),
     EffectsModule.forRoot(effectArray),
+    MaterialModule,
     PagesModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [ InvoicesService, UserService],
   bootstrap: [AppComponent]
