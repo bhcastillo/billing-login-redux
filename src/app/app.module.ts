@@ -21,7 +21,7 @@ import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
