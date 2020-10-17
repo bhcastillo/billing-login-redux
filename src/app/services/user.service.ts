@@ -11,6 +11,6 @@ export class UserService {
   constructor(private http:HttpClient) { }
 
   getBilling(){
-    return this.http.get(`${this.URI}/billing`).pipe(delay(2000))
+    return this.http.get(`${this.URI}/billing`).pipe(delay(2000));
   }
 }
