@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit } from '@angular/core';
 //Redux
 import { Store } from '@ngrx/store';
 import { getUser } from 'src/app/store/actions';

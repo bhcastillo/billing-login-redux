@@ -50,20 +50,20 @@ footer {
   border-bottom: 2px solid #fff;
 }
 /* logo */
-.logo {
+.login {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
 }
-.logo-form {
+.login-form {
   display: inherit;
   flex-direction: column;
   align-items: center;
   min-width: 150px;
   max-width: 250px;
   width: 100%;
-  height: 250px;
+  height: 260px;
   padding: 0.5rem;
   border: 1px #c2c2c2 solid;
   border-radius: 10px;
@@ -72,7 +72,7 @@ footer {
   box-shadow: 0px 10px 33px -4px rgba(0, 0, 0, 0.75);
 }
 
-.logo-full-width {
+.login-full-width {
   width: 70%;
 }
 .text-warn {

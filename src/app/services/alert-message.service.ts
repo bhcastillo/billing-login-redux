@@ -15,7 +15,14 @@ export class AlertMessageService  {
       this.invoices = user.invoices;
     });
   }
-
+  messageAttempsPassed(){
+    Swal.fire({
+      icon:'error',
+      title: 'Intentos Superados',
+      text: 'Contacta con el administrador',
+      confirmButtonText:'<i class="fab fa-whatsapp fa-2x pr-2">Whatsapp</i>'
+    })
+  }
   messageDetailInvoices(){
     Swal.fire({
       icon: 'info',
