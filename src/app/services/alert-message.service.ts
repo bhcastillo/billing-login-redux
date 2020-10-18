@@ -23,6 +23,13 @@ export class AlertMessageService  {
       confirmButtonText:'<i class="fab fa-whatsapp fa-2x pr-2">Whatsapp</i>'
     })
   }
+  messageResetNumAttempsPassed(){
+    Swal.fire({
+      icon:'info',
+      title: 'Numero de intentos reseteados',
+      timer:2000
+    })
+  }
   messageDetailInvoices(){
     Swal.fire({
       icon: 'info',

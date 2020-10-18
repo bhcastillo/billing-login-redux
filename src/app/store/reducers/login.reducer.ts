@@ -39,7 +39,8 @@ const _loginReducer = createReducer(loginStateInitalState,
     loading: false,
     loaded: true,
     isAuthenticated:false
-  }))
+  })),
+  on(actions.resetAttempsPassed, state =>({...state, loading:false, loaded:true, numAttemps: 0}))
   );
  export function loginReducer(state,action){
    return _loginReducer(state,action);

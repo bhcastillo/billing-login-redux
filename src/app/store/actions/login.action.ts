@@ -14,3 +14,4 @@ export const loginError = createAction (
 );
 // LogOut Actions
 export const logOut = createAction('[LogOut] LogOut loading');
+export const resetAttempsPassed = createAction('[Num Attemps Passed] Num Attemps Passed reset');

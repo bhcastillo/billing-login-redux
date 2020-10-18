@@ -42,6 +42,8 @@
     </button>
   </form>
 </div>
-
-<pre> {{ isAuthenticated }} </pre>
-<pre> {{ numAttemps | json }} </pre>
+<div class="w-100">
+  <div class="reset-num-attemps">
+    <button mat-raised-button color="warn" (click)="resetAttempsPassed()" >Resetear Intentos</button>
+  </div>
+</div>

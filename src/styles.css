@@ -49,12 +49,12 @@ footer {
   padding-bottom: 1px !important;
   border-bottom: 2px solid #fff;
 }
-/* logo */
+/* login */
 .login {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 93vh;
 }
 .login-form {
   display: inherit;
@@ -77,4 +77,9 @@ footer {
 }
 .text-warn {
   color: #f44336 !important;
+}
+.reset-num-attemps {
+  position: absolute;
+  right: 0;
+  left: auto;
 }

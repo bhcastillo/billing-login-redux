@@ -54,7 +54,10 @@ export class LoginComponent implements OnInit, DoCheck {
       this.store.dispatch(userActions.login({username: this.usernameInput.value, password: this.passwordInput.value}))
     }
   }
-
+  resetAttempsPassed(){
+    this.store.dispatch(userActions.resetAttempsPassed());
+    this.message.messageResetNumAttempsPassed();
+  }
 
   get usernameInput(){ 
     return this.formLogin.get('username');
