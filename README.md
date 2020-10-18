@@ -1,27 +1,31 @@
-# Billing
+[![GitHub license](https://img.shields.io/github/license/haccer/tweep.svg)](https://github.com/haccer/tweep/blob/master/LICENSE)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
+![](https://github.com/bhcastillo/billing-login-redux/blob/master/src/assets/img/git/angular.png)![](https://github.com/bhcastillo/billing-login-redux/blob/master/src/assets/img/git/redux.PNG)
 
-## Development server
+![](https://github.com/bhcastillo/billing-login-redux/blob/master/src/assets/img/git/preview.jpg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Billing, Login and Redux
 
-## Code scaffolding
+It's a project in angular for login of users and implementations of message alert on conjunction with Redux
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation
 
-## Build
+login and billing requires [Node.js](https://nodejs.org/) to run.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Install the dependencies,start fake API REST and start the server.
 
-## Running unit tests
+```sh
+cd store-login-redux
+npm install
+npm install -g json-server
+json-server --watch db.json
+npm start
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Dependencies
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- [Redux](https://redux.js.org/) - Handling the state of an application.
+- [sweetAlert2](https://sweetalert2.github.io/) - Messages Alert.
+- [ngx-spinner](https://www.npmjs.com/package/ngx-spinner) - spinner for loading.
+- [Bootswatch](https://bootswatch.com/) - version modificate of Bootstrap css.
+- [json-server](https://www.npmjs.com/package/json-server) fake API REST.
