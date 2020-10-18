@@ -8,6 +8,10 @@ export const loginSuccess = createAction(
   '[Login] Login Loaded Success',
   props<{isAuthenticated:boolean}>()
 );
+export const loginFail = createAction(
+  '[Login] Login Fail Success',
+  props<{isAuthenticated:boolean}>()
+);
 export const loginError = createAction (
   '[Login] User Loaded Error',
   props<{payload:any}>()

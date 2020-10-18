@@ -15,6 +15,13 @@ export class AlertMessageService  {
       this.invoices = user.invoices;
     });
   }
+  messageLoginFail(){
+   return Swal.fire({
+      icon:'error',
+      title: 'Usuario o Contraseña incorrectas',
+      timer:2500
+    })
+  }
   messageAttempsPassed(){
     Swal.fire({
       icon:'error',

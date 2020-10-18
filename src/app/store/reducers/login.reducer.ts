@@ -22,7 +22,7 @@ const _loginReducer = createReducer(loginStateInitalState,
     ...state,
     loading:false,
     loaded:true,
-    isAuthenticated:isAuthenticated
+    isAuthenticated
     })),
   on(actions.loginError, (state, { payload })=> ({
     ...state,
@@ -40,7 +40,8 @@ const _loginReducer = createReducer(loginStateInitalState,
     loaded: true,
     isAuthenticated:false
   })),
-  on(actions.resetAttempsPassed, state =>({...state, loading:false, loaded:true, numAttemps: 0}))
+  on(actions.resetAttempsPassed, state =>({...state, loading:false, loaded:true, numAttemps: 0})),
+  on(actions.loginFail, (state ,{ isAuthenticated }) =>({...state, loading:false, loaded:true, isAuthenticated}))
   );
  export function loginReducer(state,action){
    return _loginReducer(state,action);
