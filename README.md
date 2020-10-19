@@ -12,13 +12,17 @@ It's a project in angular for login of users and implementations of message aler
 
 login and billing requires [Node.js](https://nodejs.org/) to run.
 
-Install the dependencies,start fake API REST and start the server.
-
+Install json-server for fake API REST
 ```sh
 cd store-login-redux
-npm install
 npm install -g json-server
 json-server --watch db.json
+```
+Install the dependencies and start the server.
+Open another terminal in the same directory
+ 
+```sh
+npm install
 npm start
 ```
 
